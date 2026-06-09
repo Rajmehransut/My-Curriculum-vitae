@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chanchal Tomer - Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef3f8;
+    color:#333;
+    padding:10px;
+    font-size:13px;
+}
+
+.resume{
+    max-width:1000px;
+    margin:auto;
+    background:#fff;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.header{
+    background:linear-gradient(135deg,#003D5B,#005E7A,#25E2CC);
+    color:#fff;
+    padding:20px 30px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.profile-img{
+    width:95px;
+    height:95px;
+    border-radius:50%;
+    border:3px solid rgba(255,255,255,.3);
+    object-fit:cover;
+}
+
+.header-content h1{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:3px;
+}
+
+.header-content h2{
+    font-size:13px;
+    font-weight:500;
+    color:#c8fffb;
+    letter-spacing:1px;
+}
+
+.contact{
+    margin-top:8px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    font-size:12px;
+}
+
+.main{
+    display:grid;
+    grid-template-columns:260px 1fr;
+}
+
+.sidebar{
+    background:#f8fafc;
+    padding:18px;
+    border-right:1px solid #e5e7eb;
+}
+
+.content{
+    padding:20px;
+}
+
+.section{
+    margin-bottom:16px;
+}
+
+.section-title{
+    color:#003D5B;
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    border-bottom:2px solid #25E2CC;
+    display:inline-block;
+    padding-bottom:3px;
+    margin-bottom:8px;
+}
+
+.skill{
+    display:inline-block;
+    background:#E6FFFB;
+    color:#003D5B;
+    border:1px solid #25E2CC;
+    border-radius:20px;
+    padding:4px 10px;
+    margin:3px;
+    font-size:11px;
+    font-weight:600;
+}
+
+.job{
+    margin-bottom:14px;
+}
+
+.job h3{
+    color:#111827;
+    font-size:15px;
+}
+
+.company{
+    color:#003D5B;
+    font-weight:600;
+    margin:3px 0;
+    font-size:13px;
+}
+
+.date{
+    color:#6b7280;
+    font-size:11px;
+    margin-bottom:4px;
+}
+
+ul{
+    padding-left:16px;
+}
+
+li{
+    margin-bottom:2px;
+    line-height:1.3;
+    font-size:12px;
+}
+
+.education{
+    padding:8px;
+    background:#f8fafc;
+    border-left:3px solid #25E2CC;
+    margin-bottom:8px;
+    border-radius:6px;
+    font-size:12px;
+}
+
+p{
+    line-height:1.45;
+    font-size:12px;
+}
+
+@page{
+    size:A4;
+    margin:8mm;
+}
+
+```css
+@media print {
+
+    @page {
+        size: A4;
+        margin: 5mm;
+    }
+
+    body{
+        padding:0;
+        margin:0;
+        zoom:0.88; /* Shrinks entire resume to 88% */
+        background:#fff;
+    }
+
+    .resume{
+        max-width:100%;
+        width:100%;
+        box-shadow:none;
+        border-radius:0;
+    }
+
+    .header{
+        padding:12px 20px;
+    }
+
+    .profile-img{
+        width:70px;
+        height:70px;
+    }
+
+    .header-content h1{
+        font-size:22px;
+    }
+
+    .header-content h2{
+        font-size:11px;
+    }
+
+    .contact{
+        font-size:10px;
+        gap:8px;
+    }
+
+    .main{
+        grid-template-columns:230px 1fr;
+    }
+
+    .sidebar,
+    .content{
+        padding:12px;
+    }
+
+    .section{
+        margin-bottom:10px;
+    }
+
+    .section-title{
+        font-size:12px;
+        margin-bottom:5px;
+    }
+
+    .skill{
+        font-size:9px;
+        padding:2px 6px;
+        margin:2px;
+    }
+
+    p,
+    li,
+    .education{
+        font-size:10px;
+        line-height:1.2;
+    }
+
+    .job{
+        margin-bottom:8px;
+    }
+
+    .job h3{
+        font-size:12px;
+    }
+
+    .company{
+        font-size:11px;
+    }
+
+    .date{
+        font-size:9px;
+    }
+
+    ul{
+        margin-top:2px;
+    }
+
+    li{
+        margin-bottom:1px;
+    }
+
+    .education{
+        padding:5px;
+        margin-bottom:4px;
+    }
+
+    *{
+        page-break-inside:avoid !important;
+    }
+}
+```
+
+@media(max-width:900px){
+    .main{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        border-right:none;
+        border-bottom:1px solid #e5e7eb;
+    }
+
+    .header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .contact{
+        justify-content:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <div class="header">
+
+        <img src="profile2.jpg" class="profile-img" alt="Profile">
+
+        <div class="header-content">
+            <h1>CHANCHAL TOMER</h1>
+            <h2>TEAM LEADER | CUSTOMER OPERATIONS | CRM SPECIALIST</h2>
+
+            <div class="contact">
+                <span>📞 9599733084</span>
+                <span>✉️ chanchaltamar199@gmail.com</span>
+                <span>📍 New Delhi, India</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="sidebar">
+
+            <div class="section">
+                <h3 class="section-title">Skills</h3>
+
+                <div class="skill">Team Leadership</div>
+                <div class="skill">CRM Management</div>
+                <div class="skill">Customer Support</div>
+                <div class="skill">Client Relations</div>
+                <div class="skill">Sales Coordination</div>
+                <div class="skill">Problem Solving</div>
+                <div class="skill">Vendor Onboarding</div>
+                <div class="skill">MS Excel</div>
+                <div class="skill">MS Office</div>
+                <div class="skill">Communication</div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Languages</h3>
+                <p>Hindi</p>
+                <p>English</p>
+                <p>Punjabi</p>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">Computer Skills</h3>
+                <p>
+                    Diploma in Computer Applications<br>
+                    MS Office Suite<br>
+                    MS Excel<br>
+                    PowerPoint<br>
+                    Internet & Email Management
+                </p>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <div class="section">
+                <h3 class="section-title">Professional Profile</h3>
+
+                <p>
+                    Results-driven Team Leader with experience in customer operations,
+                    CRM management, customer support and team supervision. Skilled in
+                    client engagement, leadership, communication and operational
+                    efficiency with a strong focus on delivering exceptional customer
+                    experiences and business growth.
+                </p>
+            </div>
+
+            <div class="section">
+
+                <h3 class="section-title">Work Experience</h3>
+
+                <div class="job">
+                    <h3>Team Leader</h3>
+                    <div class="company">Romegamart LLP (B2B E-Commerce Platform)</div>
+                    <div class="date">November 2024 – Present</div>
+
+                    <ul>
+                        <li>Lead and supervise customer support and operations teams.</li>
+                        <li>Manage CRM systems, records and operational workflows.</li>
+                        <li>Handle customer escalations and ensure timely resolution.</li>
+                        <li>Monitor productivity and performance metrics.</li>
+                        <li>Provide coaching, training and team guidance.</li>
+                        <li>Support vendor onboarding and business growth initiatives.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Sales Executive</h3>
+                    <div class="company">Express One Credit Consultants Pvt. Ltd.</div>
+                    <div class="date">2023 – 2024</div>
+
+                    <ul>
+                        <li>Assisted customers in selecting financial products.</li>
+                        <li>Generated leads and maintained client relationships.</li>
+                        <li>Coordinated loan processing and documentation.</li>
+                        <li>Achieved monthly sales targets.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3>Insurance Executive</h3>
+                    <div class="company">Maximizer Marketing OPC Pvt. Ltd.</div>
+                    <div class="date">2022 – 2023</div>
+
+                    <ul>
+                        <li>Promoted insurance products and services.</li>
+                        <li>Handled customer queries and documentation.</li>
+                        <li>Built long-term client relationships.</li>
+                        <li>Provided post-sales policy support.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <h3 class="section-title">Education</h3>
+
+                <div class="education">
+                    <strong>Bachelor of Arts (B.A.)</strong><br>
+                    University of Delhi | 2023
+                </div>
+
+               
+
+                <div class="education">
+                    <strong>Class XII (CBSE)</strong> | 2020 | 84%
+                </div>
+
+                <div class="education">
+                    <strong>Class X (CBSE)</strong> | 2018 | 68%
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
